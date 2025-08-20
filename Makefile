@@ -14,7 +14,7 @@ else
 RUN_PRG = build/ccgmsterm.prg
 endif
 
-.PHONY: alla
+.PHONY: all
 all: $(EXO_PATH)
 	make build/rs232.lib
 
