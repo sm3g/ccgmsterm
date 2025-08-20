@@ -409,8 +409,7 @@ txt_edit_macros_cfg_device:
 
 txt_load_save_config:
 	.byte " ",HILITE,"load/",HILITE,"save Phone Book and Config.",CR,CR
-	.byte " ",HILITE,"quit to BASIC",CR,CR
-	.byte " ",HILITE,"view Instructions",CR,CR,0
+m	.byte " ",HILITE,"view Instructions. ", HILITE,"quit to BASIC",CR,CR,0
 
 txt_press_return_to_abort:
 	.byte SETCSR,22,0,WHITE,"Press <",YELLOW,RVSON,"RETURN",RVSOFF,WHITE,"> to abort.",CR,0

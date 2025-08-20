@@ -1,6 +1,6 @@
 export PATH:=$(abspath bin):$(PATH)
 EASYFLASH ?= 0
-EXOMIZER ?= 0
+EXOMIZER ?= 1
 AUTOMATION ?= 0
 DEFAULT_DRIVER ?= 0
 DEFAULT_BAUDRATE ?= 2400
@@ -14,7 +14,7 @@ else
 RUN_PRG = build/ccgmsterm.prg
 endif
 
-.PHONY: all
+.PHONY: alla
 all: $(EXO_PATH)
 	make build/rs232.lib
 
